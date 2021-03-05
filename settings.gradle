@@ -1,2 +1,4 @@
+include ':Library'
+include ':easysharedpref'
 include ':app'
 rootProject.name = "easysharedpref"
