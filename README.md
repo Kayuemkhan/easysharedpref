@@ -1,6 +1,4 @@
-# easysharedpref
 ## How to :
-To get a Git project into your build:
 
 **Step 1.**  Add the JitPack repository to your build file
 
@@ -23,3 +21,24 @@ allprojects {
 ```
 **That's it!**
 
+## **In Java Code**
+### Initialize easysharedpref
+Should be initialized once in  `Application.onCreate()`:
+
+```css
+	EasySharedPref.init(Context context);
+```
+### Save/Write Data
+
+Save any texts as saved  as key, value pair. 
+```css
+EasySharedPref.write("key","data");
+```
+
+### Read Data
+
+Read as the key name
+```css
+EasySharedPref.read("key","");
+```
+**Thank you !** 
