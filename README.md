@@ -1,5 +1,6 @@
 # EasySharedPref
 EasySharedPref is a library working as SharedPreferences . We can handling our data using only writing read and write after init.
+This version is only for saving strings
 
 ## How to :
 
