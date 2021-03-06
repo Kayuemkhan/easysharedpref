@@ -1,3 +1,6 @@
+# EasySharedPref
+EasySharedPref is a library working as SharedPreferences . We can handling our data using only writing read and write after init.
+
 ## How to :
 
 **Step 1.**  Add the JitPack repository to your build file
