@@ -18,8 +18,8 @@ allprojects {
 **Step 2.** Add the dependency
 
 ```css
-	dependencies {
-	        implementation 'com.github.Kayuemkhan:easysharedpref:1.0.1'
+dependencies {
+	implementation 'com.github.Kayuemkhan:easysharedpref:1.0.1'
 	}
 ```
 **That's it!**
@@ -29,7 +29,7 @@ allprojects {
 Should be initialized once in  `Application.onCreate()`:
 
 ```css
-	EasySharedPref.init(Context context);
+EasySharedPref.init(Context context);
 ```
 ### Save/Write Data
 
