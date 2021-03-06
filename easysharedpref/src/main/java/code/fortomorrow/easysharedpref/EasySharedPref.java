@@ -3,13 +3,13 @@ package code.fortomorrow.easysharedpref;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-public class SharedPrefClass {
+public class EasySharedPref {
 
     public static final String SHARED_PREF_MAIN="shared_preference_main";
     private static SharedPreferences mSharedPref;
     public static final String NAME = "initial.name";
 
-    private SharedPrefClass()
+    private EasySharedPref()
     {
 
     }
