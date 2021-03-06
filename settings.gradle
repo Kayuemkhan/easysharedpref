@@ -1,4 +1,4 @@
 include ':Library'
 include ':easysharedpref'
 include ':app'
-rootProject.name = "easysharedpref"
+rootProject.name = "easysharedprefs"
