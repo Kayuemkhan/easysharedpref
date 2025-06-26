@@ -37,7 +37,7 @@ allprojects {
 ### 💾 Step 2. Add the dependency 
 ```groovy
 dependencies {
-    implementation 'com.github.Kayuemkhan:easysharedpref:1.0.1'
+    implementation 'com.github.Kayuemkhan:easysharedpref:1.0.2'
 }
 ```
 
@@ -105,10 +105,5 @@ If you found this library useful, please give it a ⭐ on GitHub!
 
 	Happy Coding
 
----
 
-Would you like me to:
-- Convert this into an actual `README.md` file and upload it to your repo?
-- Add a `badge` section (like build status, release, downloads)?
-data could you effortless using simple `read()` and
 
