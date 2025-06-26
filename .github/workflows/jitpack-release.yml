@@ -1,0 +1,39 @@
+name: Build & Tag for JitPack
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  build:
+    name: Build & Tag Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Grant execute permissions to gradlew
+        run: chmod +x gradlew
+
+      - name: Build with Gradle
+        run: ./gradlew clean build
+
+      - name: Auto Tag on Push
+        id: auto_tag
+        run: |
+          VERSION_NAME=$(grep versionName easysharedpref/build.gradle | awk '{ print $2 }' | tr -d '"')
+          echo "Version = $VERSION_NAME"
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag -a v$VERSION_NAME -m "Release $VERSION_NAME" || true
+          git push origin v$VERSION_NAME || true
