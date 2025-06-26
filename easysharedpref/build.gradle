@@ -1,11 +1,11 @@
 plugins {
     id 'com.android.library'
-//    id 'digital.wup.android-maven-publish'
     id 'maven-publish'
-
 }
+
 group = 'com.github.Kayuemkhan'
 version = '1.0.2'
+
 android {
     namespace 'code.fortomorrow.easysharedpref'
     compileSdk = 35
@@ -31,6 +31,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+
+    // Enable publishing for Android libraries
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
 dependencies {
@@ -39,4 +46,17 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.Kayuemkhan'
+                artifactId = 'easysharedpref'
+                version = '1.0.2'
+            }
+        }
+    }
 }
