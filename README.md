@@ -1,5 +1,7 @@
 # 🚀 EasySharedPref
 
+[![](https://jitpack.io/v/Kayuemkhan/EasySharedPref.svg)](https://jitpack.io/#Kayuemkhan/EasySharedPref)
+
 **EasySharedPref** is a lightweight and developer-friendly Android library built on top of `SharedPreferences`. It makes reading and writing data effortless using simple `read()` and `write()` calls — no boilerplate or setup madness!
 
 > ✅ Perfect for storing user sessions, app settings, flags, and lightweight key-value data.
