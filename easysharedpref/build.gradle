@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.library'
-    id 'digital.wup.android-maven-publish'
+//    id 'digital.wup.android-maven-publish'
+    id 'maven-publish'
+
 }
 group = 'com.github.Kayuemkhan'
 version = '1.0.2'

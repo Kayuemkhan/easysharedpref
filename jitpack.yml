@@ -1,0 +1,6 @@
+jdk:
+  - openjdk17
+before_install:
+  - echo "Running pre-install"
+install:
+  - ./gradlew :EasySharedPref:publishToMavenLocal
