@@ -1,6 +1,6 @@
 # 🚀 EasySharedPref
 
-[![](https://jitpack.io/v/Kayuemkhan/EasySharedPref.svg)](https://jitpack.io/#Kayuemkhan/EasySharedPref)
+[![](https://jitpack.io/v/Kayuemkhan/easysharedpref.svg)](https://jitpack.io/#Kayuemkhan/easysharedpref)
 
 **EasySharedPref** is a lightweight and developer-friendly Android library built on top of `SharedPreferences`. It makes reading and writing data effortless using simple `read()` and `write()` calls — no boilerplate or setup madness!
 
@@ -37,7 +37,7 @@ allprojects {
 ### 💾 Step 2. Add the dependency 
 ```groovy
 dependencies {
-    implementation 'com.github.Kayuemkhan:easysharedpref:1.0.1'
+    implementation 'com.github.Kayuemkhan:easysharedpref:1.0.2'
 }
 ```
 
@@ -105,6 +105,5 @@ If you found this library useful, please give it a ⭐ on GitHub!
 
 	Happy Coding
 
----
 
 
